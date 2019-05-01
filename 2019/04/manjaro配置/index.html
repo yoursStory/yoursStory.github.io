@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="marjaro,linux,配置,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
+<meta name="description" content="配置国内源1234# 选择延迟低的源sudo pacman-mirrors -i -c China -m rank# 刷新缓存sudo pacman -Syy 更新系统1sudo pacman -Syyu 安装archlinuxcn签名钥匙&amp;amp;antergos签名钥匙1sudo pacman -S --noconfirm archlinuxcn-keyring antergos-keyrin">
+<meta name="keywords" content="marjaro,linux,配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nobody">
+<meta property="og:title" content="marjaro配置">
 <meta property="og:url" content="http://yoursite.com/2019/04/manjaro配置/index.html">
 <meta property="og:site_name" content="nobody">
+<meta property="og:description" content="配置国内源1234# 选择延迟低的源sudo pacman-mirrors -i -c China -m rank# 刷新缓存sudo pacman -Syy 更新系统1sudo pacman -Syyu 安装archlinuxcn签名钥匙&amp;amp;antergos签名钥匙1sudo pacman -S --noconfirm archlinuxcn-keyring antergos-keyrin">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-04-30T15:07:09.468Z">
+<meta property="og:updated_time" content="2019-05-01T13:23:56.229Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nobody">
+<meta name="twitter:title" content="marjaro配置">
+<meta name="twitter:description" content="配置国内源1234# 选择延迟低的源sudo pacman-mirrors -i -c China -m rank# 刷新缓存sudo pacman -Syy 更新系统1sudo pacman -Syyu 安装archlinuxcn签名钥匙&amp;amp;antergos签名钥匙1sudo pacman -S --noconfirm archlinuxcn-keyring antergos-keyrin">
 
 
 
@@ -122,7 +126,7 @@
 
 
 
-  <title> | nobody</title>
+  <title>marjaro配置 | nobody</title>
   
 
 
@@ -306,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">marjaro配置</h1>
         
 
         <div class="post-meta">
@@ -318,7 +322,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-30T23:07:09+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-30T00:00:00+08:00">
                 2019-04-30
               </time>
             
@@ -356,7 +360,15 @@
       
 
       
-        
+        <h2 id="配置国内源"><a href="#配置国内源" class="headerlink" title="配置国内源"></a>配置国内源</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 选择延迟低的源</span><br><span class="line">sudo pacman-mirrors -i -c China -m rank</span><br><span class="line"><span class="meta">#</span> 刷新缓存</span><br><span class="line">sudo pacman -Syy</span><br></pre></td></tr></table></figure>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
+<h2 id="安装archlinuxcn签名钥匙-amp-antergos签名钥匙"><a href="#安装archlinuxcn签名钥匙-amp-antergos签名钥匙" class="headerlink" title="安装archlinuxcn签名钥匙&amp;antergos签名钥匙"></a>安装archlinuxcn签名钥匙&amp;antergos签名钥匙</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm archlinuxcn-keyring antergos-keyring</span><br></pre></td></tr></table></figure>
+<h2 id="安装yay支持AUR"><a href="#安装yay支持AUR" class="headerlink" title="安装yay支持AUR"></a>安装yay支持AUR</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://aur.archlinux.org/yay.git</span><br><span class="line">cd 安装yay支持AUR</span><br><span class="line">makepkg -si  # --skippgpcheck作用是跳过签名验证</span><br></pre></td></tr></table></figure>
+<h2 id="安装搜狗输入法"><a href="#安装搜狗输入法" class="headerlink" title="安装搜狗输入法"></a>安装搜狗输入法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx-im fcitx-configtool fcitx-sogoupinyin #默认全部安装</span><br><span class="line"><span class="meta">#</span> 修改配置文件</span><br><span class="line">sudo nano ~/.xprofile</span><br><span class="line"><span class="meta">#</span> 增加</span><br><span class="line">export GTK_IM_MODULE=fcitx</span><br><span class="line">export QT_IM_MODULE=fcitx</span><br><span class="line">export XMODIFIERS="@im=fcitx"</span><br><span class="line"><span class="meta">#</span> 重启生效</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<h2 id="更换显卡闭源驱动"><a href="#更换显卡闭源驱动" class="headerlink" title="更换显卡闭源驱动"></a><a href="https://www.lulinux.com/archives/4722" target="_blank" rel="noopener">更换显卡闭源驱动</a></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 终端里运行sudo mhwd --install pci video-nvidia安装闭源驱动。如果出现文件已存在导致软件包无法正常安装的问题，就用yaourt -S --force lib32-nvidia-utils nvidia-utils linux414-nvidia命令强制安装相关软件包，具体包名可能不止这3个，在终端有提示，注意查看。</span><br><span class="line"></span><br><span class="line">2. 运行sudo mhwd-tui，选4，静候结果。</span><br><span class="line"></span><br><span class="line">3. 最后不要忘了运行sudo mkinitcpio -P命令以更新initramfs引导文件，否则X桌面会无法进入。</span><br><span class="line"></span><br><span class="line">4. 重启 reboot</span><br></pre></td></tr></table></figure>
+<h2 id="使用oh-my-zsh"><a href="#使用oh-my-zsh" class="headerlink" title="使用oh-my-zsh"></a>使用oh-my-zsh</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo pacman -S zsh</span><br><span class="line"></span><br><span class="line">配置默认shell：</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> sudo vim /etc/passwd</span><br><span class="line"></span><br><span class="line">将要修改的用户的shell路径改为 /usr/bin/zsh 即可，也就是将 bash 改为 zsh</span><br><span class="line"></span><br><span class="line">curl 方式：</span><br><span class="line"><span class="meta">$</span> sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span><br><span class="line"></span><br><span class="line">wget 方式</span><br><span class="line"><span class="meta">$</span> sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"</span><br><span class="line"></span><br><span class="line">修改主题</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> sudo vim ~/.zshrc</span><br><span class="line"></span><br><span class="line">找到 ZSH_THEME="robbyrussell"</span><br><span class="line"></span><br><span class="line">修改为 ZSH_THEME="random" 为随机主题，要换其他主题，修改此处即可  \</span><br></pre></td></tr></table></figure>
+<h2 id="搭梯子"><a href="#搭梯子" class="headerlink" title="搭梯子"></a>搭梯子</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> aurman -S v2ray</span><br><span class="line"><span class="meta">#</span> sudo vim /etc/v2ray/config.json</span><br><span class="line">// Config file of V2Ray. This file follows standard JSON format, with comments support.</span><br><span class="line">// Uncomment entries below to satisfy your needs. Also read our manual for more detail at</span><br><span class="line">// https://www.v2ray.com/</span><br><span class="line">&#123;</span><br><span class="line">  "log": &#123;</span><br><span class="line">    // By default, V2Ray writes access log to stdout.</span><br><span class="line">    "access": "/var/log/v2ray/access.log",</span><br><span class="line"></span><br><span class="line">    // By default, V2Ray write error log to stdout.</span><br><span class="line">    "error": "/var/log/v2ray/error.log",</span><br><span class="line"></span><br><span class="line">    // Log level, one of "debug", "info", "warning", "error", "none"</span><br><span class="line">    "loglevel": "warning"</span><br><span class="line">  &#125;,</span><br><span class="line">  // List of inbound proxy configurations.</span><br><span class="line">  "inbounds": [&#123;</span><br><span class="line">    // Port to listen on. You may need root access if the value is less than 1024.</span><br><span class="line">    "port": 1080,</span><br><span class="line"></span><br><span class="line">    // IP address to listen on. Change to "0.0.0.0" to listen on all network interfaces.</span><br><span class="line">    "listen": "127.0.0.1",</span><br><span class="line"></span><br><span class="line">    // Tag of the inbound proxy. May be used for routing.</span><br><span class="line">    "tag": "socks-inbound",</span><br><span class="line"></span><br><span class="line">    // Protocol name of inbound proxy.</span><br><span class="line">    "protocol": "socks",</span><br><span class="line"></span><br><span class="line">    // Settings of the protocol. Varies based on protocol.</span><br><span class="line">    "settings": &#123;</span><br><span class="line">      "auth": "noauth",</span><br><span class="line">      "udp": false,</span><br><span class="line">      "ip": "127.0.0.1"</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    // Enable sniffing on TCP connection.</span><br><span class="line">    "sniffing": &#123;</span><br><span class="line">      "enabled": true,</span><br><span class="line">      // Target domain will be overriden to the one carried by the connection, if the connection is HTTP or HTTPS.</span><br><span class="line">      "destOverride": ["http", "tls"]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,&#123;</span><br><span class="line">    // Port to listen on. You may need root access if the value is less than 1024.</span><br><span class="line">    "port": 1081,</span><br><span class="line"></span><br><span class="line">    // IP address to listen on. Change to "0.0.0.0" to listen on all network interfaces.</span><br><span class="line">    "listen": "127.0.0.1",</span><br><span class="line"></span><br><span class="line">    // Tag of the inbound proxy. May be used for routing.</span><br><span class="line">    "tag": "http-inbound",</span><br><span class="line"></span><br><span class="line">    // Protocol name of inbound proxy.</span><br><span class="line">    "protocol": "http",</span><br><span class="line"></span><br><span class="line">    // Settings of the protocol. Varies based on protocol.</span><br><span class="line">    "settings": &#123;</span><br><span class="line">      "auth": "noauth",</span><br><span class="line">      "udp": false,</span><br><span class="line">      "ip": "127.0.0.1"</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  ],</span><br><span class="line">  // List of outbound proxy configurations.</span><br><span class="line">    "outbound": &#123;</span><br><span class="line">        "protocol": "vmess",</span><br><span class="line">        "settings": &#123;</span><br><span class="line">            "vnext": [</span><br><span class="line">                &#123;</span><br><span class="line">                    "address": "107.182.182.5",</span><br><span class="line">                    "port": 22,</span><br><span class="line">                    "users": [</span><br><span class="line">                        &#123;</span><br><span class="line">                            "id": "0687b713-6097-413a-95fb-28dca3e71ac3",</span><br><span class="line">                            "level": 1,</span><br><span class="line">                            "alterId": 64</span><br><span class="line">                        &#125;</span><br><span class="line">                    ]</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">  // Transport is for global transport settings. If you have multiple transports with same settings</span><br><span class="line">  // (say mKCP), you may put it here, instead of in each individual inbound/outbounds.</span><br><span class="line">  //"transport": &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  // Routing controls how traffic from inbounds are sent to outbounds.</span><br><span class="line">  "routing": &#123;</span><br><span class="line">    "domainStrategy": "IPOnDemand",</span><br><span class="line">    "rules":[</span><br><span class="line">      &#123;</span><br><span class="line">        // Blocks access to private IPs. Remove this if you want to access your router.</span><br><span class="line">        "type": "field",</span><br><span class="line">        "ip": ["geoip:private"],</span><br><span class="line">        "outboundTag": "blocked"</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        // Blocks major ads.</span><br><span class="line">        "type": "field",</span><br><span class="line">        "domain": ["geosite:category-ads"],</span><br><span class="line">        "outboundTag": "blocked"</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  // Dns settings for domain resolution.</span><br><span class="line">  "dns": &#123;</span><br><span class="line">    // Static hosts, similar to hosts file.</span><br><span class="line">    "hosts": &#123;</span><br><span class="line">      // Match v2ray.com to another domain on CloudFlare. This domain will be used when querying IPs for v2ray.com.</span><br><span class="line">      "domain:v2ray.com": "www.vicemc.net",</span><br><span class="line"></span><br><span class="line">      // The following settings help to eliminate DNS poisoning in mainland China.</span><br><span class="line">      // It is safe to comment these out if this is not the case for you.</span><br><span class="line">      "domain:github.io": "pages.github.com",</span><br><span class="line">      "domain:wikipedia.org": "www.wikimedia.org",</span><br><span class="line">      "domain:shadowsocks.org": "electronicsrealm.com"</span><br><span class="line">    &#125;,</span><br><span class="line">    "servers": [</span><br><span class="line">      "1.1.1.1",</span><br><span class="line">      &#123;</span><br><span class="line">        "address": "114.114.114.114",</span><br><span class="line">        "port": 53,</span><br><span class="line">        // List of domains that use this DNS first.</span><br><span class="line">        "domains": [</span><br><span class="line">          "geosite:cn"</span><br><span class="line">        ]</span><br><span class="line">      &#125;,</span><br><span class="line">      "8.8.8.8",</span><br><span class="line">      "localhost"</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  // Policy controls some internal behavior of how V2Ray handles connections.</span><br><span class="line">  // It may be on connection level by user levels in 'levels', or global settings in 'system.'</span><br><span class="line">  "policy": &#123;</span><br><span class="line">    // Connection policys by user levels</span><br><span class="line">    "levels": &#123;</span><br><span class="line">      "0": &#123;</span><br><span class="line">        "uplinkOnly": 0,</span><br><span class="line">        "downlinkOnly": 0</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    "system": &#123;</span><br><span class="line">      "statsInboundUplink": false,</span><br><span class="line">      "statsInboundDownlink": false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  // Stats enables internal stats counter.</span><br><span class="line">  // This setting can be used together with Policy and Api.</span><br><span class="line">  //"stats":&#123;&#125;,</span><br><span class="line"></span><br><span class="line">  // Api enables gRPC APIs for external programs to communicate with V2Ray instance.</span><br><span class="line">  //"api": &#123;</span><br><span class="line">    //"tag": "api",</span><br><span class="line">    //"services": [</span><br><span class="line">    //  "HandlerService",</span><br><span class="line">    //  "LoggerService",</span><br><span class="line">    //  "StatsService"</span><br><span class="line">    //]</span><br><span class="line">  //&#125;,</span><br><span class="line"></span><br><span class="line">  // You may add other entries to the configuration, but they will not be recognized by V2Ray.</span><br><span class="line">  "other": &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 设置开机启动</span><br><span class="line"><span class="meta">$</span> systemctl enable v2ray</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -370,6 +382,16 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/marjaro/" rel="tag"># marjaro</a>
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+            <a href="/tags/配置/" rel="tag"># 配置</a>
+          
+        </div>
       
 
       
@@ -440,8 +462,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -469,7 +500,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -492,6 +523,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置国内源"><span class="nav-number">1.</span> <span class="nav-text">配置国内源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新系统"><span class="nav-number">2.</span> <span class="nav-text">更新系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装archlinuxcn签名钥匙-amp-antergos签名钥匙"><span class="nav-number">3.</span> <span class="nav-text">安装archlinuxcn签名钥匙&amp;antergos签名钥匙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装yay支持AUR"><span class="nav-number">4.</span> <span class="nav-text">安装yay支持AUR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装搜狗输入法"><span class="nav-number">5.</span> <span class="nav-text">安装搜狗输入法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换显卡闭源驱动"><span class="nav-number">6.</span> <span class="nav-text">更换显卡闭源驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用oh-my-zsh"><span class="nav-number">7.</span> <span class="nav-text">使用oh-my-zsh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭梯子"><span class="nav-number">8.</span> <span class="nav-text">搭梯子</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
